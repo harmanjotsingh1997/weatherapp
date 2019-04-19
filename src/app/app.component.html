@@ -1,0 +1,17 @@
+<div class="container">
+  <app-header></app-header>
+  <br>
+  <app-search (messageEvent)="receiveCityName($event)"></app-search>
+  <br>
+  <div class="weather-forecast">
+    <app-weather-detail [date]='date' [cityName]='cityName' [countryName]='countryName' [temperature]='temperature'
+      [humidity]='humidity' [description]='description' [wind]='wind' [iconUrl]='iconUrl'>
+    </app-weather-detail>
+    <br>
+    <div class="seven-day" *ngFor="let info of result">
+      <app-weather-list [date]='info.dt_txt' [description]='info.weather[0].description' [icon]='info.weather[0].icon'
+        [tempmin]='info.main.temp_min' [tempmax]='info.main.temp_max' [humidity]='info.main.humidity'>
+      </app-weather-list>
+    </div>
+  </div>
+</div>

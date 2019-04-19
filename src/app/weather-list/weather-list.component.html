@@ -1,0 +1,10 @@
+<div class="seven-day-fc">
+  <div class="date">{{date | date}}</div>
+  <div><img class="icons" [src]='getIcon()'> </div>
+  <div class="icon">{{description | titlecase}}</div>
+  <div class="seven-day-temp">
+    <div class="temp-low">{{tempmin}} &deg;c</div>
+    <div class="temp-high">{{tempmax}} &deg;c</div>
+  </div>
+  <div class="humidity">{{humidity}}%</div>
+</div>

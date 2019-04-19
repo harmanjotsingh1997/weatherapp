@@ -1,0 +1,67 @@
+.icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+}
+
+/* .weather-detail {
+  margin: 0 auto;
+} */
+
+/* Header row */
+
+.location {
+  font-size: 3em;
+  color: #124;
+}
+
+/* Current Weather Summary */
+.current {
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.current .visual {
+  width: 50%;
+  float: left;
+}
+
+.current .description {
+  width: 50%;
+  float: left;
+}
+
+/* Current Weather - Visual */
+
+.visual .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.temp {
+  font-size: 2.5em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.scale {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+  color: #112;
+}
+
+/* General Labels */
+
+.wind:before {
+  content: "Wind: ";
+  color: #234;
+}
+
+.humidity:before {
+  content: "Humidity: ";
+  color: #234;
+}

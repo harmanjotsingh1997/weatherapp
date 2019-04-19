@@ -1,0 +1,21 @@
+<div class="weather-detail" *ngIf="cityName">
+
+  <div class="jumbotron jumbotron-fluid vertical-center">
+    <div class="weather-forecast">
+      <div class="location">{{cityName}}, {{countryName}}</div>
+      <div class="date">{{date | date}}</div>
+      <div class="current">
+        <div class="visual">
+          <div><img class="icon" src={{iconUrl}}> </div>
+          <div class="temp">{{temperature}}</div>
+          <div class="scale">&deg;c</div>
+        </div>
+        <div class="description">
+          <div class="precip">{{description | titlecase}}</div>
+          <div class="humidity">{{humidity}}%</div>
+          <div class="wind">{{wind}} mph </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
