@@ -7,7 +7,7 @@ export class WeatherService {
 
   getWeatherData(name: string) {
     return this.http.get(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${name}&units=metric&APPID=8691f94112783ae4233115065f4fc3d2`,
+      `https://api.openweathermap.org/data/2.5/forecast?q=${name}&units=metric&APPID=8691f94112783ae4233115065f4fc3d2`,
       { responseType: 'text' }
     );
   }

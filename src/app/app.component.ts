@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
         this.humidity = obj.list[0].main.humidity;
         this.description = obj.list[0].weather[0].description;
         this.icon = obj.list[0].weather[0].icon;
-        this.iconUrl = `http://openweathermap.org/img/w/${this.icon}.png`;
+        this.iconUrl = `https://openweathermap.org/img/w/${this.icon}.png`;
         this.wind = obj.list[0].wind.speed;
         this.result = [];
         let p = this.date;
